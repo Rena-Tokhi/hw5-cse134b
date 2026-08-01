@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("projects", (collectionApi) => {
     return collectionApi
-      .getFilteredByGlob("src/projects/*.njk")
+      .getFilteredByGlob("src/projects/*.md")
       .sort((a, b) => a.data.order - b.data.order);
   });
 

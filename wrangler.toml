@@ -1,6 +1,9 @@
 name = "hw5-cse134b"
 compatibility_date = "2026-01-01"
 
+[build]
+command = "npm run build"
+
 [assets]
 directory = "_site"
 not_found_handling = "404-page"

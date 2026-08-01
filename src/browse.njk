@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Browse All Pages
+description: A full, browsable listing of every page on this site.
+permalink: /browse/
+eleventyExcludeFromCollections: true
+---
+<h1>Browse All Pages</h1>
+<p>
+  A plain listing of every page on this site, useful as a fallback when search isn't available.
+</p>
+<ul>
+  {%- for item in collections.all %}
+  <li><a href="{{ item.url }}">{{ item.data.title or item.url }}</a></li>
+  {%- endfor %}
+</ul>
