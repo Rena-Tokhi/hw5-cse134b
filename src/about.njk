@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+title: About
+description: About Rena Tokhi (CSE 134B HW5).
+---
+<section id="bio">
+  <h1>About Me</h1>
+  <article>
+    <picture>
+      <source srcset="/assets/img/placeholder-avatar.svg" media="(min-width: 480px)">
+      <img src="/assets/img/placeholder-avatar.svg" alt="Placeholder avatar for Rena Tokhi" width="320" height="320">
+    </picture>
+    <p>
+      I'm <b>Rena Tokhi</b>, a third-year Computer Science student at UC San Diego with a focus on
+      full-stack development. I care about building things that are <em>actually useful</em>, whether
+      that's a team capstone project, a from-scratch blockchain, or a small tool built to learn a new
+      framework.
+    </p>
+    <p>
+      I grew up bilingual, well, more than bilingual. At home I spoke <i lang="ps">پښتو</i>
+      (Pashto), alongside Persian/Dari and Urdu, in addition to English. <strong>That background is a
+      big part of why I'm interested in tools that serve specific communities well</strong>, and it's
+      also probably why I gravitate toward precise, detail-oriented work like cryptography and
+      distributed systems.
+    </p>
+    <button type="button" aria-haspopup="dialog">Read Full Bio</button>
+    <dialog>
+      <h2>Full Bio</h2>
+      <p>
+        This dialog is a placeholder for a longer-form bio. No JavaScript is wired up to open or
+        close it, so it isn't interactive yet. A future phase would wire it up with
+        <code>showModal()</code>/<code>close()</code>.
+      </p>
+    </dialog>
+  </article>
+</section>
+
+<section id="languages">
+  <h2>Languages</h2>
+  <p>A rough sense of my comfort level in each language I grew up speaking or studying:</p>
+  <div>
+    <label for="lang-en">English</label>
+    <progress id="lang-en" value="100" max="100">100%</progress>
+  </div>
+  <div>
+    <label for="lang-ps">Pashto</label>
+    <progress id="lang-ps" value="95" max="100">95%</progress>
+  </div>
+  <div>
+    <label for="lang-fa">Persian / Dari</label>
+    <progress id="lang-fa" value="85" max="100">85%</progress>
+  </div>
+  <div>
+    <label for="lang-ur">Urdu</label>
+    <progress id="lang-ur" value="70" max="100">70%</progress>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ol>
+    <li>UC San Diego, B.S. Computer Science, expected 2028 (in progress, currently 3rd year)</li>
+    <li>Google Cybersecurity Certificate</li>
+    <li>Google IT Essentials Certificate</li>
+  </ol>
+</section>

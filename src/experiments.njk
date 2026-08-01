@@ -1,0 +1,97 @@
+---
+layout: layouts/base.njk
+title: Experiments
+description: A technical demo page for tags and features that don't fit the portfolio content (CSE 134B HW5).
+scripts: ["canvas-demo"]
+---
+<h1>Experiments</h1>
+<p>
+  This page exists purely to demonstrate a handful of HTML tags that don't really fit naturally into my
+  portfolio content: <code>&lt;template&gt;</code>, <code>&lt;audio&gt;</code>,
+  <code>&lt;video&gt;</code>, <code>&lt;canvas&gt;</code>, and <code>&lt;source&gt;</code>. It's linked
+  from the footer of every page rather than the main navigation, since it's a technical demo rather than
+  portfolio content.
+</p>
+
+<section id="custom-elements-demo">
+  <h2>Custom Elements</h2>
+  <p>
+    <b>&lt;skill-tag&gt;</b> is styled with CSS only (no JavaScript). You can see it used all over
+    the Projects and Home pages: <skill-tag>example-tag</skill-tag>
+  </p>
+  <p>
+    <b>&lt;earthquake-feed&gt;</b> is the graded custom element for this assignment: a
+    network-backed widget with a full idle/loading/success/error lifecycle. See it live on the
+    <a href="/">home page</a>, or read the reference in the project README.
+  </p>
+</section>
+
+<section id="template-demo">
+  <h2>&lt;template&gt;</h2>
+  <p>
+    The template below defines a reusable list-item layout, reused by the earthquake widget on the
+    home page. A browser skips a <code>&lt;template&gt;</code>'s contents entirely until JavaScript
+    clones it, so you won't see anything printed below this paragraph, and that's expected.
+  </p>
+  <template id="project-card-template">
+    <article class="project-card">
+      <img src="" alt="">
+      <h3></h3>
+      <p></p>
+    </article>
+  </template>
+</section>
+
+<section id="audio-demo">
+  <h2>&lt;audio&gt;</h2>
+  <p>A short placeholder audio clip (a plain tone, generated for this demo, not a real project narration yet):</p>
+  <audio controls>
+    <source src="#" type="audio/mpeg">
+    Your browser doesn't support the audio element. You can
+    <a href="#">download the audio file</a> instead.
+  </audio>
+</section>
+
+<section id="video-demo">
+  <h2>&lt;video&gt;</h2>
+  <p>A short placeholder test clip, with two &lt;source&gt; formats for browser fallback:</p>
+  <video controls width="480" height="270" poster="/assets/img/placeholder-hero-banner.svg">
+    <source src="#" type="video/webm">
+    <source src="#" type="video/mp4">
+    Your browser doesn't support the video element. You can
+    <a href="#">download the video file</a> instead.
+  </video>
+</section>
+
+<section id="canvas-demo">
+  <h2>&lt;canvas&gt;</h2>
+  <p>A minimal canvas demo, drawn by <code>js/canvas-demo.js</code> (loaded as a module, no inline script):</p>
+  <canvas id="demo-canvas" width="400" height="120">
+    Your browser doesn't support the canvas element.
+  </canvas>
+</section>
+
+<section id="mathml-demo">
+  <h2>Extra Credit: MathML</h2>
+  <p>
+    Here's Einstein's mass&ndash;energy equivalence formula, written with MathML instead of an image:
+  </p>
+  <math xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>E</mi>
+    <mo>=</mo>
+    <mi>m</mi>
+    <msup>
+      <mi>c</mi>
+      <mn>2</mn>
+    </msup>
+  </math>
+  <p>
+    MathML has technically been part of the HTML spec for a long time, but for years it wasn't something
+    developers could actually rely on. According to <a href="https://caniuse.com/mathml" target="_blank" rel="noopener">caniuse.com</a>,
+    Chrome (and Chromium-based browsers like Edge) didn't ship built-in MathML support until relatively
+    recently. For a long stretch, Chrome either had no support or required a polyfill like MathJax,
+    even though Firefox and Safari had supported it for years. That's a big deal because Chrome/Chromium
+    has such a large browser market share: a spec feature is only really <em>usable</em> in production
+    once it works consistently across the browsers most of your users actually have.
+  </p>
+</section>

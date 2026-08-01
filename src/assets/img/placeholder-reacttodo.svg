@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="react-todo screenshot placeholder">
+  <rect width="800" height="450" fill="#f5eedc"/>
+  <g transform="translate(280,110)">
+    <rect x="0" y="0" width="28" height="28" rx="5" fill="#3f6e8c"/>
+    <path d="M6,14 l7,7 l12,-15" fill="none" stroke="#f5eedc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="44" y="6" width="196" height="16" rx="4" fill="#eee2c0"/>
+
+    <rect x="0" y="52" width="28" height="28" rx="5" fill="#3f6e8c"/>
+    <path d="M6,66 l7,7 l12,-15" fill="none" stroke="#f5eedc" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="44" y="58" width="150" height="16" rx="4" fill="#eee2c0"/>
+
+    <rect x="0" y="104" width="28" height="28" rx="5" fill="none" stroke="#a9794a" stroke-width="2.5"/>
+    <rect x="44" y="110" width="176" height="16" rx="4" fill="#eee2c0"/>
+
+    <rect x="0" y="156" width="28" height="28" rx="5" fill="none" stroke="#a9794a" stroke-width="2.5"/>
+    <rect x="44" y="162" width="120" height="16" rx="4" fill="#eee2c0"/>
+  </g>
+  <text x="400" y="380" font-family="ui-monospace, monospace" font-size="22" fill="#2b363c" text-anchor="middle">react-todo</text>
+</svg>

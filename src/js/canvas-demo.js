@@ -1,0 +1,12 @@
+const demoCanvas = document.getElementById("demo-canvas");
+const ctx = demoCanvas.getContext("2d");
+ctx.fillStyle = "#cfe1e8";
+ctx.fillRect(10, 10, 100, 100);
+ctx.strokeStyle = "#3f6e8c";
+ctx.lineWidth = 2;
+ctx.beginPath();
+ctx.arc(220, 60, 50, 0, Math.PI * 2);
+ctx.stroke();
+ctx.font = "16px monospace";
+ctx.fillStyle = "#3f6e8c";
+ctx.fillText("</> canvas demo", 150, 100);

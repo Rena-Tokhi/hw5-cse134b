@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-label="Illustrated banner representing full-stack web development">
+  <rect width="900" height="300" fill="#f5eedc"/>
+  <circle cx="150" cy="150" r="90" fill="#cfe1e8"/>
+  <circle cx="300" cy="90" r="46" fill="#eee2c0" stroke="#a9794a" stroke-width="3"/>
+  <circle cx="720" cy="200" r="110" fill="#cfe1e8"/>
+  <circle cx="640" cy="80" r="30" fill="#eee2c0" stroke="#a9794a" stroke-width="3"/>
+  <g stroke="#3f6e8c" stroke-width="3" fill="none">
+    <line x1="150" y1="150" x2="450" y2="150"/>
+    <line x1="450" y1="150" x2="720" y2="200"/>
+    <circle cx="450" cy="150" r="8" fill="#3f6e8c"/>
+  </g>
+  <text x="450" y="160" font-family="ui-monospace, monospace" font-weight="700" font-size="46" fill="#2b363c" text-anchor="middle">&lt;/&gt;</text>
+</svg>

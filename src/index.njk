@@ -1,0 +1,83 @@
+---
+layout: layouts/base.njk
+title: Home
+description: Rena Tokhi's software engineering portfolio (CSE 134B HW5).
+scripts: ["earthquake-feed"]
+---
+<section id="hero">
+  <div class="hero-inner">
+    <svg id="hero-icon" width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="52" height="52" rx="8" fill="#cfe1e8" stroke="#3f6e8c" stroke-width="2"/>
+      <text x="30" y="38" text-anchor="middle" font-size="22" fill="#3f6e8c">&lt;/&gt;</text>
+    </svg>
+    <h1>Hi, I'm Rena, a Full-Stack Developer</h1>
+    <p>
+      I'm a <strong>third-year Computer Science student</strong> at UC San Diego. This site is where
+      I show <em>real</em>, working software I've built, not just a list of classes on a
+      resume. Everything here links straight to source code, and where it exists, a live demo.<br>
+      Full-Stack Developer &middot; <i>UC San Diego</i>
+    </p>
+    <picture>
+      <source srcset="/assets/img/placeholder-hero-banner.svg" media="(min-width: 600px)">
+      <img src="/assets/img/placeholder-hero-banner.svg" alt="Illustrated banner representing full-stack web development" width="900" height="300">
+    </picture>
+    <p>
+      <a href="/projects/">View My Projects</a>
+    </p>
+  </div>
+</section>
+
+<section id="featured">
+  <h2>Featured Projects</h2>
+  <p>A quick look at three of the five projects on this site. See the
+  <a href="/projects/">full Projects page</a> for all of them.</p>
+  <ul class="project-grid">
+    {%- for project in collections.projects %}
+    {%- if loop.index <= 3 %}
+    <li>
+      <article>
+        <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="800" height="450">
+        <h3>{{ project.data.title }}</h3>
+        <p>{{ project.data.description }}</p>
+        <div class="tags">
+          {%- for tag in project.data.stack %}<skill-tag>{{ tag }}</skill-tag>{%- endfor %}
+        </div>
+        <a href="{{ project.url }}">Read more</a>
+      </article>
+    </li>
+    {%- endif %}
+    {%- endfor %}
+  </ul>
+</section>
+
+<section id="about-preview">
+  <h2>About Me</h2>
+  <p>
+    I grew up speaking <b>Pashto</b>, <b>Persian/Dari</b>, and <b>Urdu</b> at home alongside English,
+    and that background shapes a lot of what I'm drawn to build, from community-facing tools to
+    security-minded projects like my encryption app and blockchain implementation.
+    <a href="/about/">Read my full bio &rarr;</a>
+  </p>
+</section>
+
+<section id="live-earthquakes">
+  <h2>Currently Rumbling</h2>
+  <p>
+    A small live data widget: recent earthquakes worldwide, magnitude 2.5+, straight from the
+    USGS feed. Change the <code>minmagnitude</code> or <code>limit</code> attribute on
+    <code>&lt;earthquake-feed&gt;</code> in your browser devtools and watch it refetch.
+  </p>
+  <earthquake-feed minmagnitude="2.5" limit="8">
+    <template>
+      <li>
+        <strong class="eq-mag"></strong>
+        <span class="eq-place"></span>
+        <time class="eq-time" datetime="2026-01-01T00:00:00Z">just now</time>
+      </li>
+    </template>
+    <p class="eq-fallback">
+      Live earthquake data needs JavaScript. Browse recent earthquakes directly on the
+      <a href="https://earthquake.usgs.gov/earthquakes/map/">USGS earthquake map</a>.
+    </p>
+  </earthquake-feed>
+</section>

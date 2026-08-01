@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Resto-Angular screenshot placeholder">
+  <rect width="800" height="450" fill="#f5eedc"/>
+  <circle cx="400" cy="200" r="90" fill="#eee2c0" stroke="#3f6e8c" stroke-width="3"/>
+  <circle cx="400" cy="200" r="55" fill="none" stroke="#a9794a" stroke-width="2"/>
+  <g stroke="#2b363c" stroke-width="5" stroke-linecap="round">
+    <line x1="255" y1="130" x2="255" y2="270"/>
+    <line x1="243" y1="130" x2="243" y2="175"/>
+    <line x1="267" y1="130" x2="267" y2="175"/>
+  </g>
+  <g stroke="#2b363c" stroke-width="5" stroke-linecap="round">
+    <line x1="545" y1="130" x2="545" y2="270"/>
+    <path d="M545,130 q20,25 0,50" fill="none"/>
+  </g>
+  <text x="400" y="340" font-family="ui-monospace, monospace" font-size="22" fill="#2b363c" text-anchor="middle">Resto-Angular</text>
+</svg>

@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+title: Projects
+description: Five software engineering projects by Rena Tokhi (CSE 134B HW5).
+---
+<h1>Projects</h1>
+<p>
+  Five projects, selected from a full review of my GitHub repos based on commit activity, completeness,
+  and topical variety. They span a full-stack team capstone, a from-scratch distributed systems build,
+  and framework-specific work in Angular and React.
+</p>
+
+<div class="filters">
+  <span>Filter by stack (not yet wired up):</span>
+  <button type="button">JavaScript</button>
+  <button type="button">Java</button>
+  <button type="button">Angular</button>
+  <button type="button">React</button>
+</div>
+
+<section id="project-list">
+  <h2 class="visually-hidden">All projects</h2>
+  {%- for project in collections.projects %}
+  <article>
+    <img src="{{ project.data.image }}" alt="{{ project.data.imageAlt }}" width="800" height="450">
+    <h2>{{ project.data.title }}{% if project.data.flagship %} <span>(Flagship Project)</span>{% endif %}</h2>
+    <p>{{ project.data.description }}</p>
+    <div class="tags">
+      {%- for tag in project.data.stack %}<skill-tag>{{ tag }}</skill-tag>{%- endfor %}
+    </div>
+    <p><a href="{{ project.url }}">Read more</a> &middot; <a href="{{ project.data.github }}" target="_blank" rel="noopener">View on GitHub</a></p>
+  </article>
+  {%- endfor %}
+</section>

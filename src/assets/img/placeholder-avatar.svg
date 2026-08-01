@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Placeholder avatar for Rena Tokhi">
+  <rect width="320" height="320" fill="#f5eedc"/>
+  <circle cx="160" cy="160" r="130" fill="#cfe1e8" stroke="#3f6e8c" stroke-width="3"/>
+  <text x="160" y="180" font-family="ui-monospace, monospace" font-weight="700" font-size="72" fill="#3f6e8c" text-anchor="middle">RT</text>
+  <circle cx="160" cy="160" r="130" fill="none" stroke="#a9794a" stroke-width="4" stroke-dasharray="4 10"/>
+</svg>

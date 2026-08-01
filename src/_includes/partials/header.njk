@@ -1,0 +1,30 @@
+<header>
+  <div class="brand">
+    <img src="/assets/img/logo.svg" alt="{{ site.author }} logo" width="48" height="48">
+    <span>{{ site.author }}</span>
+  </div>
+  <nav aria-label="Primary">
+    <ul>
+      {%- for item in site.nav %}
+      <li{% if item.url == page.url %} class="current"{% endif %}>
+        <a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.text }}</a>
+      </li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  <fieldset class="theme-picker" hidden>
+    <legend>Theme</legend>
+    <label>
+      <input type="radio" name="theme" value="light">
+      Light
+    </label>
+    <label>
+      <input type="radio" name="theme" value="dark">
+      Dark
+    </label>
+    <label>
+      <input type="radio" name="theme" value="auto">
+      Auto
+    </label>
+  </fieldset>
+</header>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="CS Stress 14 task management app screenshot placeholder">
+  <rect width="800" height="450" fill="#f5eedc"/>
+  <g transform="translate(210,95)">
+    <rect x="0" y="0" width="120" height="230" rx="8" fill="#eee2c0" stroke="#ddcba0" stroke-width="2"/>
+    <rect x="150" y="0" width="120" height="230" rx="8" fill="#eee2c0" stroke="#ddcba0" stroke-width="2"/>
+    <rect x="300" y="0" width="120" height="230" rx="8" fill="#eee2c0" stroke="#ddcba0" stroke-width="2"/>
+    <rect x="16" y="18" width="88" height="36" rx="5" fill="#3f6e8c"/>
+    <rect x="16" y="66" width="88" height="36" rx="5" fill="#cfe1e8" stroke="#3f6e8c" stroke-width="1.5"/>
+    <rect x="166" y="18" width="88" height="36" rx="5" fill="#a9794a"/>
+    <rect x="166" y="66" width="88" height="36" rx="5" fill="#cfe1e8" stroke="#3f6e8c" stroke-width="1.5"/>
+    <rect x="166" y="114" width="88" height="36" rx="5" fill="#cfe1e8" stroke="#3f6e8c" stroke-width="1.5"/>
+    <rect x="316" y="18" width="88" height="36" rx="5" fill="#cfe1e8" stroke="#3f6e8c" stroke-width="1.5"/>
+  </g>
+  <text x="400" y="390" font-family="ui-monospace, monospace" font-size="22" fill="#2b363c" text-anchor="middle">CS Stress 14</text>
+</svg>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+{% include "partials/head.njk" %}
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <noscript>
+    <p class="noscript-banner">This site works without JavaScript. A theme picker, a live
+    earthquake widget, and site search are progressive enhancements. See the fallback
+    content in place of each when scripts are unavailable.</p>
+  </noscript>
+  {% include "partials/header.njk" %}
+  <main id="main" data-pagefind-body>
+{{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script type="module" src="/js/theme.js"></script>
+  {%- for script in (scripts or []) %}
+  <script type="module" src="/js/{{ script }}.js"></script>
+  {%- endfor %}
+</body>
+</html>

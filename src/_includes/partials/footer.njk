@@ -1,0 +1,12 @@
+<footer>
+  <p><b>{{ site.author }}</b>, Computer Science, UC San Diego</p>
+  <p>
+    {%- for item in site.social %}
+    <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.label }}</a> &middot;
+    {%- endfor %}
+    <a href="/contact/">Contact</a> &middot;
+    <a href="/experiments/">Experiments (tag demo page)</a> &middot;
+    <a href="/sitemap.xml">Sitemap</a>
+  </p>
+  <p class="fine-print">&copy; {{ site.year }} {{ site.author }}</p>
+</footer>

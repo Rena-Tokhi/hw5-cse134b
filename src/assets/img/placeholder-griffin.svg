@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="GriffinBlockchain architecture diagram placeholder">
+  <rect width="800" height="450" fill="#f5eedc"/>
+  <g stroke="#2b363c" stroke-width="2">
+    <line x1="185" y1="205" x2="315" y2="205"/>
+    <line x1="335" y1="205" x2="465" y2="205"/>
+    <line x1="485" y1="205" x2="615" y2="205"/>
+  </g>
+  <g stroke="#2b363c" stroke-width="2">
+    <polygon points="150,160 189,182.5 189,227.5 150,250 111,227.5 111,182.5" fill="#3f6e8c"/>
+    <polygon points="300,160 339,182.5 339,227.5 300,250 261,227.5 261,182.5" fill="#a9794a"/>
+    <polygon points="450,160 489,182.5 489,227.5 450,250 411,227.5 411,182.5" fill="#3f6e8c"/>
+    <polygon points="600,160 639,182.5 639,227.5 600,250 561,227.5 561,182.5" fill="#a9794a"/>
+  </g>
+  <text x="400" y="340" font-family="ui-monospace, monospace" font-size="22" fill="#2b363c" text-anchor="middle">GriffinBlockchain</text>
+</svg>

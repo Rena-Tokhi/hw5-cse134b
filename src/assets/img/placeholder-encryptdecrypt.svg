@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Encrypt-Decrypt screenshot placeholder">
+  <rect width="800" height="450" fill="#f5eedc"/>
+  <path d="M355,155 v-25 a45,45 0 0 1 90,0 v25" fill="none" stroke="#2b363c" stroke-width="10"/>
+  <rect x="330" y="155" width="140" height="110" rx="12" fill="#3f6e8c"/>
+  <circle cx="400" cy="197" r="12" fill="#f5eedc"/>
+  <rect x="394" y="205" width="12" height="26" rx="4" fill="#f5eedc"/>
+  <g stroke="#a9794a" stroke-width="3">
+    <line x1="500" y1="200" x2="560" y2="200"/>
+    <line x1="500" y1="220" x2="545" y2="220"/>
+    <line x1="240" y1="200" x2="300" y2="200"/>
+    <line x1="255" y1="220" x2="300" y2="220"/>
+  </g>
+  <text x="400" y="340" font-family="ui-monospace, monospace" font-size="22" fill="#2b363c" text-anchor="middle">Encrypt-Decrypt</text>
+</svg>

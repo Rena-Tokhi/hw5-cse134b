@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+title: Search
+description: Search Rena Tokhi's portfolio site (CSE 134B HW5).
+scripts: ["search"]
+eleventyExcludeFromCollections: true
+---
+<h1>Search</h1>
+<noscript>
+  <p>
+    Site search needs JavaScript. Browse the full <a href="/sitemap.xml">sitemap</a>, or use the
+    navigation above to reach any page directly.
+  </p>
+</noscript>
+
+<form class="search-form" role="search" id="search-form">
+  <div>
+    <label for="search-input">Search this site</label><br>
+    <input type="search" id="search-input" name="q" placeholder="Search projects, pages…" autocomplete="off">
+  </div>
+</form>
+<p id="search-status" role="status" aria-live="polite"></p>
+<ul id="search-results" aria-live="polite"></ul>

@@ -1,0 +1,55 @@
+---
+layout: layouts/base.njk
+title: Contact
+description: Get in touch with Rena Tokhi (CSE 134B HW5).
+---
+<h1>Contact</h1>
+<p>
+  Have a question about one of my projects, or want to connect? The form below uses native HTML
+  validation. Try submitting it empty to see your browser's own validation messages.
+</p>
+
+<form action="#" method="post">
+  <fieldset>
+    <legend>Send me a message</legend>
+
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+    </div>
+
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    </div>
+
+    <div>
+      <label for="reason">Reason for reaching out</label><br>
+      <select id="reason" name="reason">
+        <option value="recruiting">Recruiting / Job Opportunity</option>
+        <option value="collab">Project Collaboration</option>
+        <option value="question">General Question</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="6" cols="40" placeholder="Say hello..."></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </fieldset>
+</form>
+
+<dialog>
+  <p>Thanks for reaching out! This confirmation dialog is a placeholder: it isn't wired up to
+  open automatically yet since this phase focuses on Part 1/2/3 requirements, not form submission.</p>
+</dialog>
+
+<section id="other-ways">
+  <h2>Other Ways to Reach Me</h2>
+  <ul>
+    <li>GitHub: <a href="https://github.com/Rena-Tokhi" target="_blank" rel="noopener">github.com/Rena-Tokhi</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/rena-tokhi-6274b2213/" target="_blank" rel="noopener">linkedin.com/in/rena-tokhi</a></li>
+  </ul>
+</section>
