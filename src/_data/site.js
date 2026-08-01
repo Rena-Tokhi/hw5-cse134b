@@ -2,7 +2,7 @@ module.exports = {
   title: "Rena Tokhi",
   author: "Rena Tokhi",
   description: "Rena Tokhi's software engineering portfolio (CSE 134B HW5).",
-  deployUrl: "https://hw5-cse134b.pages.dev",
+  deployUrl: "https://hw5-cse134.tokhi-rena.workers.dev",
   nav: [
     { text: "Home", url: "/" },
     { text: "About", url: "/about/" },
